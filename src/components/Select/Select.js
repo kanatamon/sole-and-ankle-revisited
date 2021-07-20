@@ -1,20 +1,18 @@
-import React from 'react';
-import styled from 'styled-components/macro';
+import React from 'react'
+import styled from 'styled-components/macro'
 
-import { COLORS, WEIGHTS } from '../../constants';
+import { COLORS, WEIGHTS } from '../../constants'
 
-import Icon from '../Icon';
+import Icon from '../Icon'
 
-const Select = ({ label, value, children, ...delegated }) => {
-  const childArray = React.Children.toArray(children);
-  const selectedChild = childArray.find(
-    (child) => child.props.value === value
-  );
+const Select = ({ label, value, children, className, ...delegated }) => {
+  const childArray = React.Children.toArray(children)
+  const selectedChild = childArray.find((child) => child.props.value === value)
 
-  const displayedValue = selectedChild.props.children;
+  const displayedValue = selectedChild.props.children
 
   return (
-    <Wrapper>
+    <Wrapper className={className}>
       <VisibleLabel>{label}</VisibleLabel>
 
       <SelectWrapper>
@@ -22,30 +20,26 @@ const Select = ({ label, value, children, ...delegated }) => {
 
         <DisplayedBit>
           {displayedValue}
-          <ChevronIcon
-            id="chevron-down"
-            size={24}
-            strokeWidth={1.5}
-          />
+          <ChevronIcon id='chevron-down' size={24} strokeWidth={1.5} />
         </DisplayedBit>
       </SelectWrapper>
     </Wrapper>
-  );
-};
+  )
+}
 
 const Wrapper = styled.label`
   display: flex;
   align-items: baseline;
-`;
+`
 
 const VisibleLabel = styled.span`
   color: ${COLORS.gray[700]};
   margin-right: 16px;
-`;
+`
 
 const SelectWrapper = styled.div`
   position: relative;
-`;
+`
 
 const NativeSelect = styled.select`
   opacity: 0;
@@ -57,7 +51,7 @@ const NativeSelect = styled.select`
   width: 100%;
   height: 100%;
   cursor: pointer;
-`;
+`
 
 const DisplayedBit = styled.span`
   display: block;
@@ -73,7 +67,7 @@ const DisplayedBit = styled.span`
     outline: 1px dotted #212121;
     outline: 5px auto -webkit-focus-ring-color;
   }
-`;
+`
 
 const ChevronIcon = styled(Icon)`
   position: absolute;
@@ -83,6 +77,6 @@ const ChevronIcon = styled(Icon)`
   margin: auto;
   width: 24px;
   height: 24px;
-`;
+`
 
-export default Select;
+export default Select
