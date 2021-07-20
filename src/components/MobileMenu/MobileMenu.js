@@ -40,7 +40,7 @@ const MobileMenu = ({ isOpen, onDismiss }) => {
 const ResponsiveDialogOverlay = styled(DialogOverlay)`
   display: none;
 
-  @media ${QUERIES.tabletAndDown} {
+  @media ${QUERIES.tabletAndSmaller} {
     display: revert;
   }
 `

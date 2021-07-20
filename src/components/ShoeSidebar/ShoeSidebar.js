@@ -24,7 +24,7 @@ const Sidebar = () => {
 }
 
 const Wrapper = styled.aside`
-  @media ${QUERIES.tabletAndDown} {
+  @media ${QUERIES.tabletAndSmaller} {
     display: none;
   }
 `

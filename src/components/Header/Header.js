@@ -52,7 +52,7 @@ const MainHeader = styled.div`
   overflow-x: auto;
   overflow-y: hidden;
 
-  @media ${QUERIES.tabletAndDown} {
+  @media ${QUERIES.tabletAndSmaller} {
     padding: 20px 16px;
     align-items: center;
   }
@@ -63,7 +63,7 @@ const Nav = styled.nav`
   gap: clamp(1rem, 3.7vw - 1rem, 3.5rem);
   margin: 0px 48px;
 
-  @media ${QUERIES.tabletAndDown} {
+  @media ${QUERIES.tabletAndSmaller} {
     display: none;
   }
 `
@@ -71,7 +71,7 @@ const Nav = styled.nav`
 const MobileNav = styled.nav`
   display: none;
 
-  @media ${QUERIES.tabletAndDown} {
+  @media ${QUERIES.tabletAndSmaller} {
     display: flex;
     gap: 16px;
   }

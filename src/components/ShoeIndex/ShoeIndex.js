@@ -46,7 +46,7 @@ const Wrapper = styled.div`
   align-items: baseline;
   gap: 32px;
 
-  @media ${QUERIES.tabletAndDown} {
+  @media ${QUERIES.tabletAndSmaller} {
     flex-direction: column-reverse;
     gap: 8px;
   }
@@ -55,7 +55,7 @@ const Wrapper = styled.div`
 const LeftColumn = styled.div`
   flex-basis: 248px;
 
-  @media ${QUERIES.tabletAndDown} {
+  @media ${QUERIES.tabletAndSmaller} {
     flex: 1 1 0;
 
     & > ${Spacer} {
@@ -69,7 +69,7 @@ const MainColumn = styled.div`
 `
 
 const ResponsiveSelect = styled(Select)`
-  @media ${QUERIES.phoneAndDown} {
+  @media ${QUERIES.phoneAndSmaller} {
     display: none;
   }
 `
