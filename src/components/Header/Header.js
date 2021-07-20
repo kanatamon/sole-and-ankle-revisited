@@ -29,6 +29,7 @@ const Header = () => {
           <NavLink href='/women'>Women</NavLink>
           <NavLink href='/kids'>Kids</NavLink>
           <NavLink href='/collections'>Collections</NavLink>
+          <NavLink href='/Yolowwwwwwww'>Yolowwwwwwww</NavLink>
         </Nav>
         <Side />
         <MobileNav>
@@ -53,6 +54,9 @@ const MainHeader = styled.div`
   height: 72px;
   border-bottom: 1px solid ${COLORS.gray[300]};
 
+  overflow-x: auto;
+  overflow-y: hidden;
+
   @media ${QUERIES.tabletAndDown} {
     padding: 20px 16px;
     align-items: center;
@@ -61,7 +65,7 @@ const MainHeader = styled.div`
 
 const Nav = styled.nav`
   display: flex;
-  gap: 48px;
+  gap: clamp(1rem, 3.7vw - 1rem, 3.5rem);
   margin: 0px 48px;
 
   @media ${QUERIES.tabletAndDown} {
