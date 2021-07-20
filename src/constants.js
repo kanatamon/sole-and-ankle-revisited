@@ -9,10 +9,22 @@ export const COLORS = {
   },
   primary: 'hsl(340deg 65% 47%)',
   secondary: 'hsl(240deg 60% 63%)',
-};
+}
 
 export const WEIGHTS = {
   normal: 500,
   medium: 600,
   bold: 800,
-};
+}
+
+export const BREAKPOINTS = {
+  tabletMin: 600,
+  laptopMin: 950,
+  desktopMin: 1300,
+}
+
+export const QUERIES = {
+  tabletAndUp: `(min-width: ${BREAKPOINTS.tabletMin / 16}rem)`,
+  laptopAndUp: `(min-width: ${BREAKPOINTS.laptopMin / 16}rem)`,
+  desktopAndUp: `(min-width: ${BREAKPOINTS.desktopMin / 16}rem)`,
+}
