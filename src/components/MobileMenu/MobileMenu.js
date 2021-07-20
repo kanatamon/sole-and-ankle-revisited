@@ -71,8 +71,8 @@ const Nav = styled.nav`
   & > a {
     text-transform: uppercase;
     text-decoration: none;
-    color: ${COLORS.gray[900]};
-    font-weight: ${WEIGHTS.medium};
+    color: var(--color-gray-900);
+    font-weight: var(--weight-medium);
     font-size: 1.125rem;
   }
 `
@@ -84,7 +84,7 @@ const Footer = styled.footer`
 
   & > a {
     text-decoration: none;
-    color: ${COLORS.gray[700]};
+    color: var(--color-gray-700);
     font-size: ${14 / 16}rem;
   }
 `
