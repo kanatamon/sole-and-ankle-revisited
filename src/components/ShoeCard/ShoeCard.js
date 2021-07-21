@@ -44,7 +44,8 @@ const ShoeCard = ({
           <Name>{name}</Name>
           <Price
             style={{
-              '--color': variant === 'on-sale' ? COLORS.gray[700] : undefined,
+              '--color':
+                variant === 'on-sale' ? 'var(--color-gray-700)' : undefined,
               '--text-decoration':
                 variant === 'on-sale' ? 'line-through' : undefined,
             }}
@@ -114,7 +115,7 @@ const Flag = styled.div`
   padding: 0 10px;
   font-size: ${14 / 18}rem;
   font-weight: var(--weight-bold);
-  color: ${COLORS.white};
+  color: var(--color-white);
   border-radius: 2px;
 `
 
