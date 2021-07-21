@@ -1,8 +1,6 @@
 import React from 'react'
 import styled from 'styled-components/macro'
 
-import { QUERIES } from '../../constants'
-
 const Sidebar = () => {
   return (
     <Wrapper>
@@ -23,11 +21,7 @@ const Sidebar = () => {
   )
 }
 
-const Wrapper = styled.aside`
-  @media ${QUERIES.tabletAndSmaller} {
-    display: none;
-  }
-`
+const Wrapper = styled.aside``
 
 const Link = styled.a`
   display: block;
